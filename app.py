@@ -1,3 +1,4 @@
+from math import floor
 import pickle
 import numpy as np
 import os
@@ -82,7 +83,7 @@ def prediction():
 
     # reshape the array
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
-    predictedVal = str(round(float(loaded_model.predict(input_data_reshaped)[0]),2))
+    predictedVal = str(floor(float(loaded_model.predict(input_data_reshaped)[0])))
     return render_template('result.html', result= predictedVal)
     print(predictedVal)
     # return redirect(url_for('results', res = predictedVal))
