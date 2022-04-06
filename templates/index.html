@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Medical Insurance Predictor</title>
+      <link rel="stylesheet" href="static\css\style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Insurance Predictor
+         </div>
+         <form action="/predict" method="get">
+            <div class="field input">
+               <label></label>
+               <input type="text" name="age" id='age' placeholder="Enter your Age">
+            </div>
+            <div class="selectWrapper">
+               <select name="sex" class="selectBox">
+                  <option value="0">Select your Sex</option>
+                  <option value="0">Male</option>
+                  <option value="1">Female</option>
+               </select>
+               <!-- <input type="text" name="sex" id='sex' placeholder="Enter your Sex"> -->
+            </div>
+            <div class="field input">
+               <label></label>
+               <input type="text" name="bmi" id='bmi' placeholder="Enter your BMI">
+            </div>
+            <div class="field input">
+               <label></label>
+               <input type="text" name="chi" id='chi' placeholder="Number of children">
+            </div>
+            <div class="selectWrapper">
+               <select name="smo" class="selectBox">
+                  <option value=0>Do you smoke?</option>
+                  <option value=0>Yes</option>
+                  <option value=1>No</option>
+               </select>
+               <!-- <input type="text" name="smo" id='smo' placeholder="Do you smoke?"> -->
+            </div>
+            <div class="selectWrapper">
+               <select name="reg" class="selectBox">
+                  <option value=0>Select your Region</option>
+                  <option value=0>Southeast</option>
+                  <option value=1>Southwest</option>
+                  <option value=2>Northeast</option>
+                  <option value=3>Northwest</option>
+               </select>
+               <!-- <input type="text" name="reg" id='reg' placeholder="Enter your Region"> -->
+            </div>
+            <div class="field"><center>
+               <input type="submit" value="Predict"></center>
+               <!--<button class="btn-1">Predict</button>-->
+            </div>
+            </div>
+            </form>
+      </div>
+   </body>
+</html>
