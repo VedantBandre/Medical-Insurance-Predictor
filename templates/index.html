@@ -3,8 +3,41 @@
    <head>
       <meta charset="utf-8">
       <title>Medical Insurance Predictor</title>
+      <!--<link rel="stylesheet" href="static\css\style.css">-->
       <link rel="stylesheet" href="static\css\style.css">
    </head>
+
+   <style>
+      .input {
+         color: grey;
+         background: white;
+         text-align: center;
+         border-radius: 25px;
+         font-size: 17px;
+         border: 2px solid #29a090;
+         cursor: pointer;
+         
+      }
+      .input:focus,
+      .input:hover {
+         outline: none;
+        
+      }
+      .input::selection{
+         color: #29a090;
+      }
+      .smo{
+         color: grey;
+         background: white;
+         text-align: center;
+         border-radius: 25px;
+         font-size: 17px;
+         border: 2px solid #29a090;
+         cursor: pointer;
+         
+      }
+   </style>
+
    <body>
       <div class="wrapper">
          <div class="title">
@@ -15,8 +48,8 @@
                <label></label>
                <input type="text" name="age" id='age' placeholder="Enter your Age">
             </div>
-            <div class="selectWrapper">
-               <select name="sex" class="selectBox">
+            <div class="gender">
+               <select name="sex"  class="field input">
                   <option value="0">Select your Sex</option>
                   <option value="0">Male</option>
                   <option value="1">Female</option>
@@ -31,16 +64,16 @@
                <label></label>
                <input type="text" name="chi" id='chi' placeholder="Number of children">
             </div>
-            <div class="selectWrapper">
-               <select name="smo" class="selectBox">
+            <div>
+               <select name="smo" class="field input">
                   <option value=0>Do you smoke?</option>
                   <option value=0>Yes</option>
                   <option value=1>No</option>
                </select>
                <!-- <input type="text" name="smo" id='smo' placeholder="Do you smoke?"> -->
             </div>
-            <div class="selectWrapper">
-               <select name="reg" class="selectBox">
+            <div>
+               <select name="reg" class="field input">
                   <option value=0>Select your Region</option>
                   <option value=0>Southeast</option>
                   <option value=1>Southwest</option>
